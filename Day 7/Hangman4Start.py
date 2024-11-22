@@ -82,21 +82,21 @@ while not end_of_game and lives > 0:
     # Then reduce 'lives' by 1.
     if guess not in chosen_word:
         lives -= 1
-        if lives == 5:
-            print(stages[1])
-            print(f"Wrong guess! You have {lives} chances left.")
-        if lives == 4:
-            print(stages[2])
-            print(f"Wrong guess! You have {lives} chances left.")
-        if lives == 3:
-            print(stages[3])
-            print(f"Wrong guess! You have {lives} chances left.")
-        if lives == 2:
-            print(stages[4])
-            print(f"Wrong guess! You have {lives} chances left.")
-        if lives == 1:
-            print(stages[5])
-            print(f"Wrong guess! You have {lives} chances left.")
+        # if lives == 5:
+        #     print(stages[1])
+        #     print(f"Wrong guess! You have {lives} chances left.")
+        # if lives == 4:
+        #     print(stages[2])
+        #     print(f"Wrong guess! You have {lives} chances left.")
+        # if lives == 3:
+        #     print(stages[3])
+        #     print(f"Wrong guess! You have {lives} chances left.")
+        # if lives == 2:
+        #     print(stages[4])
+        #     print(f"Wrong guess! You have {lives} chances left.")
+        # if lives == 1:
+        #     print(stages[5])
+        #     print(f"Wrong guess! You have {lives} chances left.")
     else:
         # Check guessed letter
         for position in range(word_length):
@@ -121,3 +121,4 @@ while not end_of_game and lives > 0:
 
         # TODO-3: - print the ASCII art from 'stages' that corresponds to the current number of 'lives' the user has
         #  remaining.
+    print(stages[lives])
